@@ -1,0 +1,75 @@
+/* ==UserStyle==
+@name           monkeytype.com - 6/21/2023, 12:02:51 AM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    This is a custom theme created for monkeytype by me SakuraBlossomTree
+@author         SakuraBlossomTree
+==/UserStyle== */
+@-moz-document url-prefix("https://monkeytype.com/") {
+    /* Insert code here... */
+    
+    /*Take the url of the background-image property and just go to your monkeytype settings and goto custom background image and paste it in there 
+    
+    It solves some issues which i don't know how to solve but I will look into it 
+    
+    */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+
+    :root {
+
+        --bg-color: #440091;
+        --main-color: #feb7bd;
+        --caret-color: #794cbd;
+        --sub-color: #6458b4;
+        --sub-alt-color: #440091;
+        --text-color: #e17fee;
+    }
+
+    body {
+
+        background-image: url('https://wallpaperaccess.com/full/632832.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pageTest {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #top {
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #bottom {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+
+        position: relative;
+        visibility: hidden;
+    }
+
+    h1:after {
+
+        content: "桜の花木";
+        font-family: 'Sawarabi Gothic', sans-serif;
+        position: absolute;
+        visibility: visible;
+        left: 0;
+        top: 0;
+    }
+}
